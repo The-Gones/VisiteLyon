@@ -192,6 +192,48 @@ fixe déplacement fixe déplacement fixe déplacement fixe déplacement fixe
 
 
 
+footer {
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	text-align: center;
+	font-size: 2rem;
+	background: var(--header-footer-bg-color);
+	padding: 10px 0;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+footer .icon {
+	width: 40px;
+	font-size: 2rem;
+}
+
+footer #contactez-nous {
+	padding: 0 20px;
+}
+
+
+#missing {
+	height: 100vh;
+	text-align: center;
+	font-size: 4rem;
+	margin: 0;
+	padding: 0 50px;
+	color: var(--light-color);
+    display: flex;
+	justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
 
 
 

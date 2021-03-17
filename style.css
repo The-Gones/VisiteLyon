@@ -142,6 +142,55 @@ Avec la pseudo classe :checked, on ne sélectionne .menu-text uniquement si .men
 
 
 
+/************************* CARROUSEL *************************/
+
+
+#slider { 
+	--nb-images: 5;
+	width: 100%;
+	position: relative;
+	max-width: 1000px; /* On ne veut pas qu'une image soit agrandie plus que sa largeur normale (souvent vers 1000px), même sur très grand écran */
+	overflow: hidden; /* on cache ce qui dépasse sinon on voit la bande entière !!! */
+	margin: 0 auto; /* Attention ! Bug des marges ! Si on met une margin-top, cela fait descendre le nav ! Donc margin-top à 0 et mettre un padding-top à la place */
+	padding: 52px 0;
+} 
+
+
+#slider figure {
+	position: relative; 
+	width: calc(100% * var(--nb-images)); /* 100% * nb d'images du carrousel */
+	margin: 0;
+	padding: 0;
+	font-size: 0; /* retire tous les espaces autour et entre les images */
+	animation: 30s slidy infinite;
+	animation-direction: alternate;
+  }
+
+#slider figure img {
+	width: calc(100% / var(--nb-images)); /* chaque image a un pourcentage égal des 100% de figure */
+	height: auto;
+}
+
+/* On considère que la div container fait 100% de large et on déplace la bande d'image vers la gauche en incréments de cette distance
+Si on veut placer 5 images, avec un temps de déplacement de 5% entre chaque (donc 4 * 5%), il reste 80% à diviser par 5, soit 16% de temps d'affichage fixe de chaque image
+Ce qui fait :
+fixe déplacement fixe déplacement fixe déplacement fixe déplacement fixe
+*/
+
+  @keyframes slidy {
+	0% { left: 0%; }
+	16% { left: 0%; }
+	21% { left: -100%; }
+	37% { left: -100%; }
+	42% { left: -200%; }
+	58% { left: -200%; }
+	63% { left: -300%; }
+	79% { left: -300%; }
+	84% { left: -400%; }
+	100% { left: -400%; }
+}
+
+
 
 
 
@@ -168,7 +217,8 @@ Avec la pseudo classe :checked, on ne sélectionne .menu-text uniquement si .men
         display: none; /* on masque le burger sur desktop */
 	}
 
-
-
+	#slider { 
+		width: 80%;
+	}
 
 }

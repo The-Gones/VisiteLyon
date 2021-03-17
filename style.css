@@ -1,0 +1,174 @@
+/************************* GENERAL *************************/
+
+:root {
+    /* Déclaration des variables */
+    --primary-color: rgba(0, 51, 183, 1);
+    --header-footer-bg-color: rgba(113, 147, 235, 1);
+    --main-font: 'Lobster';
+    --dark-color: black;
+    --light-color: white;
+}
+
+
+body {
+	font-family: var(--main-font), cursive;
+	background: var(--primary-color);
+	box-sizing: border-box;
+    margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+
+a {
+	color: var(--light-color);
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+/************************* NAVIGATION : MENU *************************/
+#navigation-section {
+	background-color: var(--header-footer-bg-color);
+	position: fixed;
+    width: 100%;
+	z-index: 3; /* pour qu'il s'affiche toujours devant */
+    display: inline-block;
+}
+
+#navigation-section #logo-text {
+    display: inline-block;
+    padding: 6px 20px;
+    font-size: 2rem;
+}
+
+#navigation-section .menu-text {
+	margin: 0;
+	padding: 0;
+	list-style: none; /* suppression des puces des listes (on est dans un ul) */
+	overflow: hidden; /* pour masquer le menu lorsqu'on est sur mobile */
+    transition: max-height 0.2s ease-out; /* effet d'apparition/disparition du menu sur mobile */
+    display: block;
+    clear: both; /* pour pouvoir changer le float */
+    float: left;
+    max-height: 0; /* pour faire disparaître le menu au clic sur un lien */
+}
+
+
+#navigation-section .menu-text li a {
+	display: block;
+	padding: 15px 30px;
+	font-size: 1.5rem;
+}
+
+
+/* menu-icon = burger */
+#navigation-section .menu-icon {
+	cursor: pointer; /* curseur pour les liens (souvent une main) */
+	float: right; /* Pour faire afficher le burger à droite et non pas à la suite logo-text */
+	padding: 25px 25px;
+	position: relative;
+	user-select: none; /* on ne peut pas sélectionner le texte (ici le burger) */
+	display: block; /* pour afficher le burger car on est sur mobile  */
+}
+
+#navigation-section .menu-icon .navicon {
+	/* dessine le trait du milieu du burger */
+	background: var(--light-color);
+	display: block;
+	height: 2px;
+	position: relative;
+	transition: background 0.2s ease-out;
+	width: 20px;
+}
+
+#navigation-section .menu-icon .navicon:before,
+#navigation-section .menu-icon .navicon:after {
+	/* ajoute 2 autres traits au dessus et au dessous du précédent */
+	background: var(--light-color);
+	content: "";
+	display: block;
+	height: 100%;
+	position: absolute;
+	transition: all 0.2s ease-out;
+	width: 100%;
+}
+
+#navigation-section .menu-icon .navicon:before {
+    /* Distance entre le 1er et le 2ème trait */
+	top: -8px;
+}
+
+#navigation-section .menu-icon .navicon:after {
+    /* Distance entre le 2ème et le 3ème trait */
+	top: 8px;
+}
+
+/* menu-btn = case à cocher invisible sur desktop, car une checkbox a uniquement deux états: coché ou non, et on va se servir de ces deux états pour afficher ou cacher le menu voisin dans l’HTML */
+#navigation-section .menu-btn {
+	display: none;
+}
+
+/* Avec le ~ on sélectionne les éléments ayant pour classe .menu-text précédés d’un élément ayant pour classe .menu-btn.
+Avec la pseudo classe :checked, on ne sélectionne .menu-text uniquement si .menu-btn est cochée. */
+#navigation-section .menu-btn:checked ~ .menu-text {
+	max-height: 240px;
+}
+
+#navigation-section .menu-btn:checked ~ .menu-icon .navicon {
+	/* Au clic, on masque le trait du milieu du burger */
+	background: transparent;
+}
+
+#navigation-section .menu-btn:checked ~ .menu-icon .navicon:before {
+	/* Au clic, on pivote le trait du haut du burger */
+	transform: rotate(45deg);
+}
+
+#navigation-section .menu-btn:checked ~ .menu-icon .navicon:after {
+	/* Au clic, on pivote le trait du bas du burger */
+	transform: rotate(-45deg);
+}
+
+#navigation-section .menu-btn:checked ~ .menu-icon .navicon:before,
+#navigation-section .menu-btn:checked ~ .menu-icon .navicon:after {
+	/* au clic, on remet la position à 0 pour les traits du haut et du bas désormais en X */
+	top: 0;
+}
+
+
+
+
+
+
+
+/************************* MEDIA QUERIES *************************/
+
+@media screen and (min-width: 900px) {
+
+	/* NAVIGATION : MENU */
+	#navigation-section {
+        display: flex;
+        justify-content: space-evenly;
+        align-items:center;
+	}
+
+	#navigation-section .menu-text {
+		display: flex;
+        justify-content: space-evenly;
+        align-items:center;
+        overflow: visible; /* pour afficher le menu textuel lorsqu'on est sur desktop */
+	}
+
+	#navigation-section .menu-icon {
+        display: none; /* on masque le burger sur desktop */
+	}
+
+
+
+
+}

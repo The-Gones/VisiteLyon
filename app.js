@@ -6,8 +6,8 @@ const i18n = domI18n({
 });
 
 document.getElementById('switch-fr-btn').addEventListener('click', () => {
-  i18n.changeLanguage('fr');
+  i18n.changeLanguage('en');
 });
 document.getElementById('switch-en-btn').addEventListener('click', () => {
-  i18n.changeLanguage('en');
+  i18n.changeLanguage('fr');
 });

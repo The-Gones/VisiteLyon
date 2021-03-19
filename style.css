@@ -251,7 +251,7 @@ fixe déplacement fixe déplacement fixe déplacement fixe déplacement fixe
 	font-size: 1.5rem;
   }
 
-  .overlay .scrolling {
+.overlay .scrolling {
 	overflow: auto;
 	max-height: 98%;
 }

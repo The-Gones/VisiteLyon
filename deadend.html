@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
@@ -10,37 +10,44 @@
 		<link href="style.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
+
 		<header>
-		<!-- Navigation Section-->
-        <nav id="navigation-section">
-			<a id="logo-text" href="index.html">Visit'Lyon</a>
-			<!-- Burger pour mobiles -->
-			<input class="menu-btn" type="checkbox" id="menu-btn" />
-			<label class="menu-icon" for="menu-btn">
-				<span class="navicon"></span>
-			</label>
-			<!--MENU-->
-			<ul class="menu-text">
-				<li><a href="#">Les Sites</a></li>
-				<li><a href="#">La Gastronomie</a></li>
-				<li><a href="#">Contactez-nous</a></li>
-			</ul>
-		</nav>
-	    </header>
+			<!-- Navigation Section-->
+			<nav id="navigation-section">
+				<a id="logo-text" href="index.html">Visit'Lyon</a>
+				<img class="switch-to-en-btn" id="switch_btn" src="assets/images/UK_flag.png" alt="">
+				<!-- Burger pour mobiles -->
+				<input class="menu-btn" type="checkbox" id="menu-btn" />
+				<label class="menu-icon" for="menu-btn">
+					<span class="navicon"></span>
+				</label>
+				<!--MENU-->
+				<ul class="menu-text">
+					<li><a href="sites.html" data-translatable>Les Sites // The sightseeings</a></li> 
+					<li><a href="gastronomie.html" data-translatable>La Gastronomie // Gastronomy</a></li>
+					<li><a href="contact.html" data-translatable>Contactez-nous // Contact us</a></li>
+				</ul>
+			</nav>
+		</header>
+
 		<main>
 			<div id="missing">
 				<div><i class="fas fa-smile-wink"></i><br>Pour l'instant, nous ne sommes pas encore totalement équipés, mais ça viendra !!!</div>
 			</div>
 		</main>
-	
 		<footer>
 			<a href="deadend.html" class="icon"><i class="fab fa-twitter"></i></a>
 			<a href="deadend.html" class="icon"><i class="fab fa-facebook"></i></a>
 			<a href="deadend.html" class="icon"><i class="fab fa-instagram"></i></a>
-			<a href="contact.html" id="contactez-nous">Contactez-nous !</a>
+			<a id="contactez-nous" href="contact.html"data-translatable>Contactez-nous // Contact us</a>
 			<a href="#" class="icon"><i class="fas fa-arrow-circle-up"></i></a>
 		</footer>
 
-<!-- <script src="script.js"></script> -->
+
+		
+		<script src="dom-i18n.js"></script>
+		<script src="app.js"></script>
+		<script src="sites.js"></script>
+
 	</body>
 </html>

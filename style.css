@@ -164,7 +164,7 @@ Avec la pseudo classe :checked, on ne sélectionne .menu-text uniquement si .men
 	font-size: 0; /* retire tous les espaces autour et entre les images */
 	animation: 30s slidy infinite;
 	animation-direction: alternate;
-  }
+}
 
 #slider figure img {
 	width: calc(100% / var(--nb-images)); /* chaque image a un pourcentage égal des 100% de figure */
@@ -177,7 +177,7 @@ Ce qui fait :
 fixe déplacement fixe déplacement fixe déplacement fixe déplacement fixe
 */
 
-  @keyframes slidy {
+@keyframes slidy {
 	0% { left: 0%; }
 	16% { left: 0%; }
 	21% { left: -100%; }
@@ -227,6 +227,10 @@ fixe déplacement fixe déplacement fixe déplacement fixe déplacement fixe
 
 /* ajout des boutons sur la main pages et script.js pour l'api geoloc*/
 .button{
+	margin: 20px auto;
+	width: 80%;
+	padding: 15px;
+	border: 10px solid black;
 	
 
 }
@@ -251,10 +255,6 @@ fixe déplacement fixe déplacement fixe déplacement fixe déplacement fixe
 	box-shadow: 3px 5px 10px black;
 }
 
-
-
-    
-  
 /* bouton main page   pour se regaler*/
 .button-eat   {
     
@@ -293,8 +293,8 @@ fixe déplacement fixe déplacement fixe déplacement fixe déplacement fixe
 /* div mapid pour la geoloc */
 #mapid{
 	
-    height: 400px;
-    width: 400px;
+    height: 900px;
+    width: 900px;
 	border-radius: 10px;
 }
 

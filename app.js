@@ -5,28 +5,36 @@ const i18n = domI18n({
   defaultLanguage: "fr",
 });
 
-const switchBtn = document.getElementById("switch_btn");
+const switchBtn = document.querySelector("#switch_btn");
+const currentLanguage = localStorage.getItem("langue");
+const UKFlagSrc = "./assets/images/UK_flag.png";
+const FranceFlagSrc = "./assets/images/France_flag.png";
+
+function switchLanguageFlag(imgSrc, flag, language) {
+  i18n.changeLanguage(language);
+  switchBtn.className = flag;
+  switchBtn.src = imgSrc;
+  localStorage.setItem("langue", flag);
+}
+
+if (!currentLanguage) {
+  switchBtn.classList.add("tochange");
+  switchLanguageFlag(UKFlagSrc, "switch-to-en-btn", "fr");
+} else if (currentLanguage === "switch-to-en-btn") {
+  switchLanguageFlag(UKFlagSrc, "switch-to-en-btn", "fr");
+} else if (currentLanguage === "switch-to-fr-btn") {
+  switchLanguageFlag(FranceFlagSrc, "switch-to-fr-btn", "en");
+}
+
 switchBtn.addEventListener("click", () => {
   switch (switchBtn.className) {
     case "switch-to-en-btn":
-      i18n.changeLanguage("en");
-      switchBtn.className = "switch-to-fr-btn";
-      switchBtn.src = "assets/images/France_flag.png";
+      switchLanguageFlag(FranceFlagSrc, "switch-to-fr-btn", "en");
       break;
     case "switch-to-fr-btn":
-      i18n.changeLanguage("fr");
-      switchBtn.className = "switch-to-en-btn";
-      switchBtn.src = "assets/images/UK_flag.png";
+      switchLanguageFlag(UKFlagSrc, "switch-to-en-btn", "fr");
       break;
     default:
       break;
   }
 });
-
-
-// document.getElementById('switch-fr-btn').addEventListener('click', () => {
-//   i18n.changeLanguage('en');
-// });
-// document.getElementById('switch-en-btn').addEventListener('click', () => {
-//   i18n.changeLanguage('fr');
-// });

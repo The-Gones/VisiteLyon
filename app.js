@@ -11,12 +11,12 @@ switchBtn.addEventListener("click", () => {
     case "switch-to-en-btn":
       i18n.changeLanguage("en");
       switchBtn.className = "switch-to-fr-btn";
-      switchBtn.src = "assets/images/UK_flag.png";
+      switchBtn.src = "assets/images/France_flag.png";
       break;
     case "switch-to-fr-btn":
       i18n.changeLanguage("fr");
       switchBtn.className = "switch-to-en-btn";
-      switchBtn.src = "assets/images/France_flag.png";
+      switchBtn.src = "assets/images/UK_flag.png";
       break;
     default:
       break;

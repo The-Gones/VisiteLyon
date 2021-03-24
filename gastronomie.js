@@ -3,7 +3,7 @@ const sitesList = [
       id: 1,
       name: "Restaurant Gastronomique Christian Tetedoie",
       district: "Lyon 5ème // Lyon 5th",
-      picture: "./assets/images/roue-bellecour.jpg",
+      picture: "./assets/images/restaurants/restaurant_tetedoie.jpg"
       description: "<span>Le saucisson brioché ou saucisson en brioche est une spécialité culinaire de charcuterie pâtissière traditionnelle de la cuisine lyonnaise, à base de saucisson chaud lyonnais cuit à l'étouffée au four dans une pâte à brioche moelleuse dorée, et servi en tranche1. </span>"
     },
     {

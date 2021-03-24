@@ -1,4 +1,4 @@
-//const markerMonument = L.icon({iconUrl: Me.png});
+// const markerMonument = L.icon({iconUrl: Me.png});
 
 function onGeolocSuccess(position) {
   const iconMe = L.icon({
@@ -21,7 +21,7 @@ function onGeolocSuccess(position) {
   });
   const lat = position.coords.latitude;
   const lng = position.coords.longitude;
-  const map = L.map("mapid").setView([lat, lng], 13);
+  const map = L.map("mapid").setView([lat, lng], 15);
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     attribution:
       '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
@@ -69,7 +69,7 @@ function onGeolocSuccess(position) {
     .openPopup();
   L.marker([45.730841613025476, 4.824883982891172], { icon: iconMonument })
     .addTo(map)
-    .bindPopup("Hall Tony Gargnier")
+    .bindPopup("Halle Tony Garnier")
     .openPopup();
   L.marker([45.76201107234311, 4.822013365999859], { icon: iconMonument })
     .addTo(map)
@@ -78,25 +78,25 @@ function onGeolocSuccess(position) {
   L.marker([lat, lng], { icon: iconMe }).addTo(map).bindPopup("Me").openPopup();
 }
 
-function showContact(position) {
-  const iconContact = L.icon({
-    iconUrl: "./assets/Icons/Me.png",
-    iconSize: [50, 50],
-    iconAnchor: [12, 50],
-    popupAnchor: [15, -50],
-  });
+// function showContact(position) {
+//   const iconContact = L.icon({
+//     iconUrl: "./assets/Icons/Me.png",
+//     iconSize: [50, 50],
+//     iconAnchor: [12, 50],
+//     popupAnchor: [15, -50],
+//   });
 
-  const map = L.map("mapid").setView(
-    [45.74645589235081, 4.8271580692520475],
-    13
-  );
-  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    attribution:
-      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-  }).addTo(map);
+//   const map = L.map("mapid").setView(
+//     [45.74645589235081, 4.8271580692520475],
+//     13
+//   );
+//   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+//     attribution:
+//       '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+//   }).addTo(map);
 
-  L.marker([lat, lng], { icon: iconMe }).addTo(map).bindPopup("Me").openPopup();
-}
+//   L.marker([lat, lng], { icon: iconMe }).addTo(map).bindPopup("Me").openPopup();
+// }
 
 document.addEventListener("DOMContentLoaded", function (event) {
   if (window.location.pathname === "/index.html") {

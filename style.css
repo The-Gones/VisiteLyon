@@ -2,11 +2,11 @@
 
 :root {
   /* Déclaration des variables */
-  --primary-color: rgb(255, 255, 255);
-  --header-footer-bg-color: rgba(113, 147, 235, 1);
+  --primary-color: #444;
+  --header-footer-bg-color: #3a8eba;
   --main-font: "Lobster";
   --dark-color: black;
-  --light-color: white;
+  --light-color: #f8f8ff;
 }
 
 body {
@@ -202,81 +202,76 @@ fixe déplacement fixe déplacement fixe déplacement fixe déplacement fixe
   }
 }
 
-
-
-
 /************************* CARDS *************************/
 .cards {
-	margin: 0 auto; /* Attention ! Bug des marges ! Si on met une margin-top, cela fait descendre le nav ! Donc margin-top à 0 et mettre un padding-top à la place */
-	padding: 52px 0;
-	width: 100vw;
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-  }
-
-  .card {
-	width: 100vw;
-	height: calc(100vh - 100px);
-	margin: 20px;
-	border-radius: 10px;
-	display: flex;
-	flex-direction: column;
-	background-color: var(--light-color);
-	box-shadow: rgba(23, 24, 26, 0.5) 0px 5px 5px;
-	text-align: center;
-  }
-
-
-  .card-img {
-	width: 90%;
-	height: 80%;
-	margin: 4% auto;
-	background-size: cover;
-	background-position: center;
+  margin: 0 auto; /* Attention ! Bug des marges ! Si on met une margin-top, cela fait descendre le nav ! Donc margin-top à 0 et mettre un padding-top à la place */
+  padding: 52px 0;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-  .card-title {
-	margin: 0px 4%;
-	font-size: 2rem;
-  }
+.card {
+  width: 100vw;
+  height: calc(100vh - 100px);
+  margin: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--light-color);
+  box-shadow: rgba(23, 24, 26, 0.5) 0px 5px 5px;
+  text-align: center;
+}
 
-  .card-district {
-	margin: 0px 4% 20px;
-	font-size: 2rem;
-  }
+.card-img {
+  width: 90%;
+  height: 80%;
+  margin: 4% auto;
+  background-size: cover;
+  background-position: center;
+}
 
-  .overlay {
-	position: fixed;
-	display: none;
-	width: 80vw; 
-	height: 85vh;
-	margin: 5% auto;
-	padding: 5%;
-	border-radius: 10px;
-	background-color: rgba(255,255,255,0.9);
-	z-index: 2;
-	cursor: pointer;
-	font-size: 1.5rem;
-  }
+.card-title {
+  margin: 0px 4%;
+  font-size: 2rem;
+}
+
+.card-district {
+  margin: 0px 4% 20px;
+  font-size: 2rem;
+}
+
+.overlay {
+  position: fixed;
+  display: none;
+  width: 80vw;
+  height: 85vh;
+  margin: 5% auto;
+  padding: 5%;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 2;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
 
 .overlay .scrolling {
-	overflow: auto;
-	max-height: 98%;
+  overflow: auto;
+  max-height: 98%;
 }
-
 
 /************************* FOOTER *************************/
 footer {
-	display: flex;
-	justify-content: center;
-	align-items:center;
-	text-align: center;
-	font-size: 2rem;
-	background: var(--header-footer-bg-color);
-	padding: 10px 0;
-	bottom: 0;
-	width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  background: var(--header-footer-bg-color);
+  padding: 10px 0;
+  bottom: 0;
+  width: 100%;
 }
 
 footer .icon {
@@ -285,13 +280,9 @@ footer .icon {
 }
 
 footer #contactez-nous {
-	padding: 0 20px;
-	font-size: 1.2rem;
+  padding: 0 20px;
+  font-size: 1.2rem;
 }
-
-
-
-
 
 /************************* 404 LANDING PAGE *************************/
 #missing {

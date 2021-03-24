@@ -1,8 +1,8 @@
 const i18n = domI18n({
   selector: "[data-translatable]",
   separator: " // ",
-  languages: ["fr", "en"],
-  defaultLanguage: "fr",
+  languages: ["fr-FR", "en"],
+  defaultLanguage: "fr-FR",
 });
 
 const switchBtn = document.querySelector("#switch_btn");
@@ -19,9 +19,9 @@ function switchLanguageFlag(imgSrc, flag, language) {
 
 if (!currentLanguage) {
   switchBtn.classList.add("tochange");
-  switchLanguageFlag(UKFlagSrc, "switch-to-en-btn", "fr");
+  switchLanguageFlag(UKFlagSrc, "switch-to-en-btn", "fr-FR");
 } else if (currentLanguage === "switch-to-en-btn") {
-  switchLanguageFlag(UKFlagSrc, "switch-to-en-btn", "fr");
+  switchLanguageFlag(UKFlagSrc, "switch-to-en-btn", "fr-FR");
 } else if (currentLanguage === "switch-to-fr-btn") {
   switchLanguageFlag(FranceFlagSrc, "switch-to-fr-btn", "en");
 }
@@ -32,7 +32,7 @@ switchBtn.addEventListener("click", () => {
       switchLanguageFlag(FranceFlagSrc, "switch-to-fr-btn", "en");
       break;
     case "switch-to-fr-btn":
-      switchLanguageFlag(UKFlagSrc, "switch-to-en-btn", "fr");
+      switchLanguageFlag(UKFlagSrc, "switch-to-en-btn", "fr-FR");
       break;
     default:
       break;

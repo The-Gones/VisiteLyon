@@ -58,6 +58,7 @@ a {
 
 #switch_btn {
   height: 25px;
+  cursor: pointer;
 }
 
 /* menu-icon = burger */
@@ -286,9 +287,9 @@ footer #contactez-nous {
 
 /************************* 404 LANDING PAGE *************************/
 #missing {
-  height: 100vh;
+  height: 80vh;
   text-align: center;
-  font-size: 4rem;
+  font-size: 3rem;
   margin: 0;
   padding: 0 50px;
   color: var(--light-color);
@@ -299,27 +300,15 @@ footer #contactez-nous {
 
 /************************* CONTACT US *************************/
 
-#carte {
+#contact-block {
   width: auto;
   height: 50vh;
-}
-
-#contact {
-  width: auto;
-  height: 50vh;
-}
-
-iframe {
-  margin-top: 50px;
-}
-
-#contact {
   text-align: center;
   padding-top: 90px;
   font-size: 24px;
 }
 
-#contact p {
+#contact-block p {
   margin: 0px;
   padding-top: 5px;
 }
@@ -396,6 +385,12 @@ iframe {
   text-shadow: 2px 5px 5px var(--dark-color);
 }
 
+#geolocation-contact {
+  width: 100%;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
 /* div mapid pour la geoloc */
 #mapid {
   width: 100%;
@@ -436,6 +431,10 @@ iframe {
   #mapid {
     width: 80%;
     border-radius: 10px;
+  }
+
+  #missing {
+    font-size: 4rem;
   }
 }
 

@@ -353,3 +353,64 @@ iframe {
 .contact {
   font-size: 16px;
 }
+
+/* ajout des boutons sur la main pages et script.js pour l'api geoloc*/
+.button {
+  margin: 20px auto;
+  width: 80%;
+  padding: 15px;
+  border: 10px solid black;
+}
+
+.button-visit {
+  display: inline-block;
+  width: 320px;
+  height: 80px;
+  line-height: 70px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: rgba(113, 147, 235, 1);
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 30px;
+  text-shadow: 2px 5px 5px black;
+  box-shadow: 3px 5px 10px black;
+}
+
+/* bouton main page   pour se regaler*/
+.button-eat {
+  display: inline-block;
+  width: 320px;
+  height: 80px;
+  line-height: 70px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: rgba(113, 147, 235, 1);
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 30px;
+  text-shadow: 2px 5px 5px black;
+  box-shadow: 3px 5px 10px black;
+}
+#geoloc-button {
+  display: inline-block;
+  width: 320px;
+  height: 80px;
+  line-height: 70px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: rgba(113, 147, 235, 1);
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+  text-shadow: 2px 5px 5px black;
+  box-shadow: 3px 5px 10px black;
+}
+
+/* div mapid pour la geoloc */
+#mapid {
+  height: 900px;
+  width: 900px;
+  border-radius: 10px;
+}

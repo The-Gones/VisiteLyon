@@ -429,6 +429,10 @@ iframe {
     width: 80%;
   }
 
+  .card {
+    width: 45vw;
+  }
+
   #mapid {
     width: 80%;
     border-radius: 10px;

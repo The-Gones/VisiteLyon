@@ -1,3 +1,4 @@
+const cards = document.querySelector(".cards");
 const sitesList = [
     {
       id: 1,
@@ -24,8 +25,57 @@ const sitesList = [
       id:4,
       name: "Bouchon Les Lyonnais",
       district: "Lyon 5er // Lyon 5st",
-      picture: "./assets/images/restaurants/rrestaurant_bouchon_les_lyonnais.JPG",
+      picture: "./assets/images/restaurants/restaurant_bouchon_les_lyonnais.JPG",
       description: "<span>Ahhhh les celebres bouchons lyonnais, si tu as 50 ans et que tu n'as pas mis les pieds dans un bouchon c'est que tu as rate ta vie !</span><span>Ahhhh the famous Bouchons Lyonnais, if you are 50 years old and you have not set foot in a cork you have missed your life!</span>"
     },
   ];
+
+  function createCard(title, imageUrl, district, description, id) {
+    const card = document.createElement("div");
+    card.classList.add("card");
+    cards.appendChild(card);
+  
+    const cardImg = document.createElement("div");
+    cardImg.style.backgroundImage = `url(${imageUrl})`;
+    cardImg.classList.add("card-img");
+    card.appendChild(cardImg);
+  
+    const cardTitle = document.createElement("div");
+    cardTitle.classList.add("card-title");
+    cardTitle.dataset.translatable = '';
+    cardTitle.innerHTML = title;
+    card.appendChild(cardTitle);
+  
+    const cardDistrict = document.createElement("div");
+    cardDistrict.classList.add("card-district");
+    cardDistrict.dataset.translatable = '';
+    cardDistrict.innerHTML = district;
+    card.appendChild(cardDistrict);
+  
+    const overlay = document.createElement("div");
+    overlay.id = id;
+    overlay.classList.add("overlay");
+    cards.appendChild(overlay);
+    overlay.style.display = "none";
+    document.getElementById(id).addEventListener("click", () => {
+      document.getElementById(id).style.display = "none";
+    });
+  
+    const overlayScrolling = document.createElement("div");
+    overlayScrolling.classList.add("scrolling");
+    overlayScrolling.dataset.translatable = '';
+    overlayScrolling.innerHTML = description;
+    overlay.appendChild(overlayScrolling);
+  
+    card.addEventListener("click", () => {
+      document.getElementById(id).style.display = "block";
+    });
+  
+  }
+  
+  for (let site of sitesList) {
+    createCard(site.name, site.picture, site.district, site.description, site.id);
+  }
+  
+  
   

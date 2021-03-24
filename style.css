@@ -438,3 +438,9 @@ iframe {
     border-radius: 10px;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .card {
+    width: 30vw;
+  }
+}

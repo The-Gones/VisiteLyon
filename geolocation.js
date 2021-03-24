@@ -21,7 +21,7 @@ function onGeolocSuccess(position) {
   });
   const lat = position.coords.latitude;
   const lng = position.coords.longitude;
-  const map = L.map("mapid").setView([lat, lng], 15);
+  const map = L.map("mapid").setView([lat, lng], 12);
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     attribution:
       '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',

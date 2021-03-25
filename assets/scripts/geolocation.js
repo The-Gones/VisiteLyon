@@ -80,7 +80,6 @@ function onLocationFound(position) {
 }
 
 function onLocationError(e) {
-  alert(e.message);
   map.setView(new L.LatLng(45.76428137089953, 4.8320291315741954), 12);
 }
 

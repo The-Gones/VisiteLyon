@@ -20,7 +20,8 @@
   },
   "scripts": {
     "serve": "parcel serve ./*.html",
-    "build": "parcel build ./*.html"
+    "build": "parcel build ./*.html",
+    "prefix": "postcss ./assets/styles/style.css --use autoprefixer -d ./assets/styles/prefixed/"
   },
   "author": "Wilders",
   "main": "index.js",
@@ -29,6 +30,7 @@
     "url": "git+https://github.com/The-Gones/VisiteLyon.git"
   },
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/The-Gones/VisiteLyon/issues"
   },

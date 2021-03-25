@@ -36,12 +36,31 @@
 			<section id="geolocation-contact">
 				<div id="mapid"></div>
 			</section>
-			<div id ="contact-block">
-				<p data-translatable>Nous contacter // Contact Us</p>
-				<p>Tel</p>
-				<p class='contact'>+33 (01) 23 45 67 89</p>
-				<p>@Mail</p>
-				<p class='contact'>lyon@mail.com</p>
+			<div class="formContainer">
+				<form id="contact" action="" method="post">
+					  
+					<h3 data-translatable>Contact // Contact Form</h3>
+					
+					<h4 data-translatable>Laisse ton commentaire ici // Contact us to give a comment</h4>
+					
+					<fieldset>
+						<input placeholder="Ton nom // Your name" type="text" tabindex="1" required autofocus>
+					</fieldset>
+					
+					<fieldset>
+						<input placeholder="Ton email // Your Email Address" type="email" tabindex="2" required>
+					</fieldset>
+										
+					<fieldset>
+						<textarea placeholder="Allez écris ici ... // Come on write here..." tabindex="5" required></textarea>
+					</fieldset>
+					
+					<fieldset>
+						<button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+					</fieldset>
+			
+				</form>
+		
 			</div>
 		</main>
 
@@ -63,4 +82,3 @@
 		<script src="assets/scripts/geolocation.js"></script>
 	</body>
 </html>
-

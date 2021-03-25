@@ -16,7 +16,7 @@ const latLgnArray = [
 const map = L.map("mapid", {
   minZoom: 0,
   zoom: 20,
-  maxZoom: 20,
+  maxZoom: 30,
 });
 
 const iconMe = L.icon({
@@ -122,6 +122,8 @@ function onLocationFound(position) {
   const lat = position.latitude;
   const lng = position.longitude;
   L.marker([lat, lng], { icon: iconMe }).addTo(map).bindPopup("Me").openPopup();
+  map.setView(new L.LatLng(lat, lng), 13);
+
   const distancesArray = [];
   latLgnArray.forEach((point) => {
     distancesArray.push([

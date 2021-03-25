@@ -1,19 +1,19 @@
 const map = L.map("mapid");
 
 const iconMe = L.icon({
-  iconUrl: "./assets/Images/Icons/Me.png",
+  iconUrl: "./assets/images/icons/Me.png",
   iconSize: [50, 50],
   iconAnchor: [12, 50],
   popupAnchor: [15, -50],
 });
 const iconRestaurant = L.icon({
-  iconUrl: "./assets/Images/Icons/restaurant.png",
+  iconUrl: "./assets/images/icons/restaurant.png",
   iconSize: [50, 50],
   iconAnchor: [0, 10],
   popupAnchor: [19, -10],
 });
 const iconMonument = L.icon({
-  iconUrl: "./assets/Images/Icons/monument.png",
+  iconUrl: "./assets/images/icons/monument.png",
   iconSize: [40, 51],
   iconAnchor: [0, 18],
   popupAnchor: [18, -15],
@@ -87,4 +87,4 @@ function onLocationError(e) {
 map.on("locationfound", onLocationFound);
 map.on("locationerror", onLocationError);
 
-map.locate({ setView: true, maxZoom: 16 });
+map.locate({ setView: true, maxZoom: 13 });

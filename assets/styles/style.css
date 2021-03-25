@@ -7,6 +7,7 @@
   --main-font: "Lobster";
   --dark-color: black;
   --light-color: #f8f8ff;
+  --highlight-color: #3a8eba;
 }
 
 body {
@@ -300,21 +301,88 @@ footer #contactez-nous {
 
 /************************* CONTACT US *************************/
 
-#contact-block {
-  width: auto;
-  height: 50vh;
-  text-align: center;
-  padding-top: 90px;
-  font-size: 24px;
+/* NEW DESIGN FORM --- WorkInProgres --- 
+TODO review layout maybe min-with and also right site of the form margin? padding? 
+TODO chasing also duplicated declarations
+*/
+
+.formContainer {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
 }
 
-#contact-block p {
-  margin: 0px;
-  padding-top: 5px;
+#contact {
+  background: #f9f9f9;
+  padding: 25px;
+  margin: 150px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
-.contact {
-  font-size: 16px;
+#contact h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+#contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #fff;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact textarea:hover {
+  border: 1px solid #757575;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: rgba(113, 147, 235, 1);
+  color: #fff;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+  background: rgb(64, 98, 185);
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #707070;
 }
 
 /* ajout des boutons sur la main pages et script.js pour l'api geoloc*/
@@ -399,6 +467,18 @@ footer #contactez-nous {
   z-index: 0;
 }
 
+/* Affichage des distances si geoloc activée */
+#distances {
+  width: 100%;
+  margin: 0 auto;
+  padding: 100px 50px;
+}
+
+.distance {
+  font-size: 2rem;
+  color: var(--light-color);
+}
+
 /************************* MEDIA QUERIES *************************/
 
 @media screen and (min-width: 900px) {
@@ -445,100 +525,4 @@ footer #contactez-nous {
   .card {
     width: 30vw;
   }
-}
-/************************* CONTACT US *************************/
-
-#carte {
-  width: auto;
-  height: 50vh;
-}
-
-iframe {
-  margin-top: 50px;
-}
-
-/*********************** NEW CONTACT FORM *********************/ 
-
-/* NEW DESIGN FORM --- WorkInProgres --- 
-TODO review layout maybe min-with and also right site of the form margin? padding? 
-TODO chasing also duplicated declarations
-*/
-
-.formContainer {
-  max-width: 400px;
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-}
-
-#contact {
-  background: #F9F9F9;
-  padding: 25px;
-  margin: 150px 0;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-}
-
-#contact h3 {
-  display: block;
-  font-size: 30px;
-  font-weight: 300;
-  margin-bottom: 10px;
-}
-
-#contact h4 {
-  margin: 5px 0 15px;
-  display: block;
-  font-size: 14px;
-  font-weight: 400;
-}
-
-fieldset {
-  border: medium none !important;
-  margin: 0 0 10px;
-  min-width: 100%;
-  padding: 0;
-  width: 100%;
-}
-
-#contact input[type="text"],
-#contact input[type="email"],
-#contact textarea {
-  width: 100%;
-  border: 1px solid #ccc;
-  background: #FFF;
-  margin: 0 0 5px;
-  padding: 10px;
-}
-
-#contact input[type="text"]:hover,
-#contact input[type="email"]:hover,
-#contact textarea:hover {
-border: 1px solid #757575;
-}
-
-#contact textarea {
-  height: 100px;
-  max-width: 100%;
-  resize: none;
-}
-
-#contact button[type="submit"] {
-  cursor: pointer;
-  width: 100%;
-  border: none;
-  background:  rgba(113, 147, 235, 1);
-  color: #FFF;
-  margin: 0 0 5px;
-  padding: 10px;
-  font-size: 15px;
-}
-
-#contact button[type="submit"]:hover {
-  background:  rgb(64, 98, 185);
-}
-
-#contact input:focus,
-#contact textarea:focus {
-  outline: 0;
-  border: 1px solid #707070;
 }

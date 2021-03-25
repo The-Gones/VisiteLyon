@@ -123,7 +123,7 @@ function onLocationFound(position) {
   const distancesArray = [];
   latLgnArray.forEach((point) => {
     distancesArray.push([
-      distance(point[1], point[2], lat, lng, "K").toFixed(3),
+      distance(point[1], point[2], lat, lng, "K").toFixed(2),
       point[0],
     ]);
   });

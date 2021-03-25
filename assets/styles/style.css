@@ -309,29 +309,21 @@ TODO chasing also duplicated declarations
 .formContainer {
   max-width: 400px;
   width: 100%;
-  margin: 0 auto;
+  margin: 100px auto;
   position: relative;
 }
 
 #contact {
   background: var(--light-color);
   padding: 25px;
-  margin: 150px 0;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
 #contact h3 {
   display: block;
-  /* font-size: 30px; */
+  font-size: 2rem;
   font-weight: 300;
   margin-bottom: 10px;
-}
-
-#contact h4 {
-  margin: 5px 0 15px;
-  display: block;
-  /* font-size: 14px; */
-  font-weight: 400;
 }
 
 #contact input,

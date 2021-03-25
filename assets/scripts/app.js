@@ -7,8 +7,8 @@ const i18n = domI18n({
 
 const switchBtn = document.querySelector("#switch_btn");
 const currentLanguage = localStorage.getItem("langue");
-const UKFlagSrc = "./assets/images/Icons/UK_flag.png";
-const FranceFlagSrc = "./assets/images/Icons/France_flag.png";
+const UKFlagSrc = "./assets/images/icons/UK_flag.png";
+const FranceFlagSrc = "./assets/images/icons/France_flag.png";
 
 function switchLanguageFlag(imgSrc, flag, language) {
   i18n.changeLanguage(language);

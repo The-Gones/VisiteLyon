@@ -2,19 +2,19 @@
 
 function onGeolocSuccess(position) {
   const iconMe = L.icon({
-    iconUrl: "./assets/Images/Icons/Me.png",
+    iconUrl: "./assets/images/icons/Me.png",
     iconSize: [50, 50],
     iconAnchor: [12, 50],
     popupAnchor: [15, -50],
   });
   const iconRestaurant = L.icon({
-    iconUrl: "./assets/Images/Icons/restaurant.png",
+    iconUrl: "./assets/images/icons/restaurant.png",
     iconSize: [50, 50],
     iconAnchor: [0, 10],
     popupAnchor: [19, -10],
   });
   const iconMonument = L.icon({
-    iconUrl: "./assets/Images/Icons/monument.png",
+    iconUrl: "./assets/images/icons/monument.png",
     iconSize: [40, 51],
     iconAnchor: [0, 18],
     popupAnchor: [18, -15],
@@ -61,7 +61,7 @@ function onGeolocSuccess(position) {
     .openPopup();
   L.marker([45.7504299522329, 4.844660414172378], { icon: iconRestaurant })
     .addTo(map)
-    .bindPopup("La table de max ")
+    .bindPopup("La table de Max")
     .openPopup("");
   L.marker([45.73315440812064, 4.8181694445917245], { icon: iconMonument })
     .addTo(map)

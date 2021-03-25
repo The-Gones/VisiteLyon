@@ -128,7 +128,6 @@ function onLocationFound(position) {
   });
 
   distancesArray.sort((a, b) => a[0] - b[0]);
-  console.log(distancesArray);
 
   const listDistances = document.querySelector("#distances");
   for (let site in distancesArray) {

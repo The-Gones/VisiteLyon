@@ -314,7 +314,7 @@ TODO chasing also duplicated declarations
 }
 
 #contact {
-  background: #f9f9f9;
+  background: var(--light-color);
   padding: 25px;
   margin: 150px 0;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
@@ -322,7 +322,7 @@ TODO chasing also duplicated declarations
 
 #contact h3 {
   display: block;
-  font-size: 30px;
+  /* font-size: 30px; */
   font-weight: 300;
   margin-bottom: 10px;
 }
@@ -330,30 +330,20 @@ TODO chasing also duplicated declarations
 #contact h4 {
   margin: 5px 0 15px;
   display: block;
-  font-size: 14px;
+  /* font-size: 14px; */
   font-weight: 400;
 }
 
-fieldset {
-  border: medium none !important;
-  margin: 0 0 10px;
-  min-width: 100%;
-  padding: 0;
-  width: 100%;
-}
-
-#contact input[type="text"],
-#contact input[type="email"],
+#contact input,
 #contact textarea {
   width: 100%;
   border: 1px solid #ccc;
   background: #fff;
   margin: 0 0 5px;
-  padding: 10px;
+  padding-top: 10px;
 }
 
-#contact input[type="text"]:hover,
-#contact input[type="email"]:hover,
+#contact input:hover,
 #contact textarea:hover {
   border: 1px solid #757575;
 }
@@ -366,10 +356,9 @@ fieldset {
 
 #contact button[type="submit"] {
   cursor: pointer;
-  width: 100%;
   border: none;
   background: rgba(113, 147, 235, 1);
-  color: #fff;
+  color: var(--light-color);
   margin: 0 0 5px;
   padding: 10px;
   font-size: 15px;
@@ -383,60 +372,6 @@ fieldset {
 #contact textarea:focus {
   outline: 0;
   border: 1px solid #707070;
-}
-
-/* ajout des boutons sur la main pages et script.js pour l'api geoloc*/
-.button {
-  margin: 20px auto;
-  width: 80%;
-  padding: 15px;
-  border: 10px solid black;
-}
-
-.button-visit {
-  display: inline-block;
-  width: 320px;
-  height: 80px;
-  line-height: 70px;
-  text-align: center;
-  vertical-align: middle;
-  background-color: rgba(113, 147, 235, 1);
-  border-radius: 10px;
-  text-decoration: none;
-  font-size: 30px;
-  text-shadow: 2px 5px 5px black;
-  box-shadow: 3px 5px 10px black;
-}
-
-/* bouton main page pour se regaler*/
-.button-eat {
-  display: inline-block;
-  width: 320px;
-  height: 80px;
-  line-height: 70px;
-  text-align: center;
-  vertical-align: middle;
-  background-color: rgba(113, 147, 235, 1);
-  border-radius: 10px;
-  text-decoration: none;
-  font-size: 30px;
-  text-shadow: 2px 5px 5px black;
-  box-shadow: 3px 5px 10px black;
-}
-#geoloc-button {
-  display: inline-block;
-  width: 320px;
-  height: 80px;
-  line-height: 70px;
-  text-align: center;
-  vertical-align: middle;
-  background-color: rgba(113, 147, 235, 1);
-  border-radius: 10px;
-  text-decoration: none;
-  font-size: 30px;
-  color: white;
-  text-shadow: 2px 5px 5px black;
-  box-shadow: 3px 5px 10px black;
 }
 
 /************************* GEOLOCALISATION *************************/
@@ -456,7 +391,7 @@ fieldset {
 #geolocation-contact {
   width: 100%;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px 0 50px;
 }
 
 /* div mapid pour la geoloc */

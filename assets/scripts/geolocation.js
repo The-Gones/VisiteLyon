@@ -13,11 +13,7 @@ const latLgnArray = [
   ["Fourvière", 45.76201107234311, 4.822013365999859],
 ];
 
-const map = L.map("mapid", {
-  minZoom: 0,
-  zoom: 20,
-  maxZoom: 30,
-});
+const map = L.map("mapid");
 
 const iconMe = L.icon({
   iconUrl: "./assets/images/icons/Me.png",
@@ -131,7 +127,6 @@ function onLocationFound(position) {
       point[0],
     ]);
   });
-
   distancesArray.sort((a, b) => a[0] - b[0]);
 
   const listDistances = document.querySelector("#distances");

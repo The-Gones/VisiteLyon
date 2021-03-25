@@ -468,10 +468,9 @@ fieldset {
 }
 
 /* Affichage des distances si geoloc activée */
-#distances {
+#dist-container {
   width: 100%;
-  margin: 0 auto;
-  padding: 100px 50px;
+  margin: 50px auto;
 }
 
 .distance {
@@ -511,6 +510,10 @@ fieldset {
   #mapid {
     width: 80%;
     border-radius: 10px;
+  }
+  #dist-container {
+    width: 80%;
+    margin: 100px auto;
   }
 
   #missing {

@@ -1,4 +1,3 @@
-const myPosition = [45.74636657848492, 4.8271802891410704];
 const latLgnArray = [
   ["Rue de Saint Jean", 45.76284862751659, 4.82712289542231],
   ["Bellecour", 45.75784511732561, 4.8318345861873855],
@@ -14,7 +13,11 @@ const latLgnArray = [
   ["Fourvière", 45.76201107234311, 4.822013365999859],
 ];
 
-const map = L.map("mapid");
+const map = L.map("mapid", {
+  minZoom: 0,
+  zoom: 20,
+  maxZoom: 20,
+});
 
 const iconMe = L.icon({
   iconUrl: "./assets/images/icons/Me.png",
@@ -135,7 +138,6 @@ function onLocationFound(position) {
     oneDistance.dataset.translatable = "";
     oneDistance.innerHTML = `<span>Le site <span style="color:var(--highlight-color);">${distancesArray[site][1]}</span> est à <span style="color:var(--highlight-color);">${distancesArray[site][0]} km</span> de vous</span><span>The site <span style="color:var(--highlight-color);">${distancesArray[site][1]}</span> is at <span style="color:var(--highlight-color);">${distancesArray[site][0]} km</span> from you</span>`;
     oneDistance.classList.add("distance");
-
     listDistances.appendChild(oneDistance);
   }
 }
@@ -147,4 +149,4 @@ function onLocationError(e) {
 map.on("locationfound", onLocationFound);
 map.on("locationerror", onLocationError);
 
-map.locate({ setView: true, maxZoom: 13 });
+map.locate({ setView: true });

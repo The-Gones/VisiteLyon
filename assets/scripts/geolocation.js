@@ -42,73 +42,73 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 L.marker([45.76284862751659, 4.82712289542231], { icon: iconMonument })
   .addTo(map)
   .bindPopup(
-    "<b>Rue de Saint Jean<br/<br/><img src='./assets/images/Sites/lyon_5eme_rue_de_saint_jean.png' width='70px'/>"
+    "<b>Rue de Saint Jean<br/<br/><img src='./assets/images/sites/lyon_5eme_rue_de_saint_jean.png' width='70px'/>"
   )
   .openPopup();
 L.marker([45.75784511732561, 4.8318345861873855], { icon: iconMonument })
   .addTo(map)
   .bindPopup(
-    "<b>Bellecour<br/<br/><img src='./assets/images/Sites/lyon_2eme_roue_bellecour.jpg' width='90px'/>"
+    "<b>Bellecour<br/<br/><img src='./assets/images/sites/lyon_2eme_roue_bellecour.jpg' width='90px'/>"
   )
   .openPopup();
 L.marker([45.815623046911064, 4.848125827332044], { icon: iconRestaurant })
   .addTo(map)
   .bindPopup(
-    "<b>Paul Bocuse<br/<br/><img src='./assets/images/Restaurants/restaurant_paul_bocuse.png' width='90px'/>"
+    "<b>Paul Bocuse<br/<br/><img src='./assets/images/restaurants/restaurant_paul_bocuse.png' width='90px'/>"
   )
   .openPopup();
 L.marker([45.77724496109871, 4.854030158042909], { icon: iconMonument })
   .addTo(map)
   .bindPopup(
-    "<b>Parc de la tête d'or<br/<br/><img src='./assets/images/Sites/lyon_6eme_parc_de_la_tete_d_or.jpg' width='90px'/>"
+    "<b>Parc de la tête d'or<br/<br/><img src='./assets/images/sites/lyon_6eme_parc_de_la_tete_d_or.jpg' width='90px'/>"
   )
   .openPopup();
 L.marker([45.767720762954404, 4.835725478180787], { icon: iconMonument })
   .addTo(map)
   .bindPopup(
-    "<b>Hôtel de Ville<br/<br/><img src='./assets/images/Sites/lyon_1er_hotel_de_ville.jpg' width='90px'/>"
+    "<b>Hôtel de Ville<br/<br/><img src='./assets/images/sites/lyon_1er_hotel_de_ville.jpg' width='90px'/>"
   )
   .openPopup();
 L.marker([45.74490954213577, 4.870858098379423], { icon: iconMonument })
   .addTo(map)
   .bindPopup(
-    "<b>Institut Lumière<br/<br/><img src='./assets/images/Sites/lyon_7eme_institut_lumiere.jpg' width='90px'/>"
+    "<b>Institut Lumière<br/<br/><img src='./assets/images/sites/lyon_7eme_institut_lumiere.jpg' width='90px'/>"
   )
   .openPopup();
 L.marker([45.76187314114473, 4.82623209282098], { icon: iconRestaurant })
   .addTo(map)
   .bindPopup(
-    "<b>Bouchon Lyonnais<br/<br/><img src='./assets/images/Restaurants/restaurant_bouchon_les_lyonnais.JPG' width='90px'/>"
+    "<b>Bouchon Lyonnais<br/<br/><img src='./assets/images/restaurants/restaurant_bouchon_les_lyonnais.JPG' width='90px'/>"
   )
   .openPopup();
 L.marker([45.75894375572862, 4.823471376799861], { icon: iconRestaurant })
   .addTo(map)
   .bindPopup(
-    "<b>Tetedoie<br/<br/><img src='./assets/images/Restaurants/restaurant_tetedoie.jpg' width='90px'/>"
+    "<b>Tetedoie<br/<br/><img src='./assets/images/restaurants/restaurant_tetedoie.jpg' width='90px'/>"
   )
   .openPopup();
 L.marker([45.7504299522329, 4.844660414172378], { icon: iconRestaurant })
   .addTo(map)
   .bindPopup(
-    "<b>La Table De Max<br/<br/><img src='./assets/images/Restaurants/restaurant_la_table_de_max.jpg' width='90px'/>"
+    "<b>La Table De Max<br/<br/><img src='./assets/images/restaurants/restaurant_la_table_de_max.jpg' width='90px'/>"
   )
   .openPopup();
 L.marker([45.73315440812064, 4.8181694445917245], { icon: iconMonument })
   .addTo(map)
   .bindPopup(
-    "<b>Musée Des Confluences<br/<br/><img src='./assets/images/Sites/lyon_2_musee_confluences.jpg' width='90px'/>"
+    "<b>Musée Des Confluences<br/<br/><img src='./assets/images/sites/lyon_2_musee_confluences.jpg' width='90px'/>"
   )
   .openPopup();
 L.marker([45.730841613025476, 4.824883982891172], { icon: iconMonument })
   .addTo(map)
   .bindPopup(
-    "<b>Halle Tony Garnier<br/<br/><img src='./assets/images/Sites/lyon_2eme_halle_tony_garnier.jpg' width='90px'/>"
+    "<b>Halle Tony Garnier<br/<br/><img src='./assets/images/sites/lyon_2eme_halle_tony_garnier.jpg' width='90px'/>"
   )
   .openPopup();
 L.marker([45.76201107234311, 4.822013365999859], { icon: iconMonument })
   .addTo(map)
   .bindPopup(
-    "<b>Fourvière<br/<br/><img src='./assets/images/Sites/lyon_5eme_fourviere.jpg' width='90px'/>"
+    "<b>Fourvière<br/<br/><img src='./assets/images/sites/lyon_5eme_fourviere.jpg' width='90px'/>"
   )
   .openPopup();
 

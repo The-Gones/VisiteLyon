@@ -41,51 +41,75 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 
 L.marker([45.76284862751659, 4.82712289542231], { icon: iconMonument })
   .addTo(map)
-  .bindPopup("Rue de Saint Jean")
+  .bindPopup(
+    "<b>Rue de Saint Jean<br/<br/><img src='./assets/images/Sites/lyon_5eme_rue_de_saint_jean.png' width='70px'/>"
+  )
   .openPopup();
 L.marker([45.75784511732561, 4.8318345861873855], { icon: iconMonument })
   .addTo(map)
-  .bindPopup("Bellecour")
+  .bindPopup(
+    "<b>Bellecour<br/<br/><img src='./assets/images/Sites/lyon_2eme_roue_bellecour.jpg' width='90px'/>"
+  )
   .openPopup();
 L.marker([45.815623046911064, 4.848125827332044], { icon: iconRestaurant })
   .addTo(map)
-  .bindPopup("Paul Bocuse")
+  .bindPopup(
+    "<b>Paul Bocuse<br/<br/><img src='./assets/images/Restaurants/restaurant_paul_bocuse.png' width='90px'/>"
+  )
   .openPopup();
 L.marker([45.77724496109871, 4.854030158042909], { icon: iconMonument })
   .addTo(map)
-  .bindPopup("Parc de la tête d'or")
+  .bindPopup(
+    "<b>Parc de la tête d'or<br/<br/><img src='./assets/images/Sites/lyon_6eme_parc_de_la_tete_d_or.jpg' width='90px'/>"
+  )
   .openPopup();
 L.marker([45.767720762954404, 4.835725478180787], { icon: iconMonument })
   .addTo(map)
-  .bindPopup("Hôtel de Ville")
+  .bindPopup(
+    "<b>Hôtel de Ville<br/<br/><img src='./assets/images/Sites/lyon_1er_hotel_de_ville.jpg' width='90px'/>"
+  )
   .openPopup();
 L.marker([45.74490954213577, 4.870858098379423], { icon: iconMonument })
   .addTo(map)
-  .bindPopup("Institut lumière")
+  .bindPopup(
+    "<b>Institut Lumière<br/<br/><img src='./assets/images/Sites/lyon_7eme_institut_lumiere.jpg' width='90px'/>"
+  )
   .openPopup();
 L.marker([45.76187314114473, 4.82623209282098], { icon: iconRestaurant })
   .addTo(map)
-  .bindPopup("Bouchon Lyonnais")
+  .bindPopup(
+    "<b>Bouchon Lyonnais<br/<br/><img src='./assets/images/Restaurants/restaurant_bouchon_les_lyonnais.JPG' width='90px'/>"
+  )
   .openPopup();
 L.marker([45.75894375572862, 4.823471376799861], { icon: iconRestaurant })
   .addTo(map)
-  .bindPopup("Tetedoie")
+  .bindPopup(
+    "<b>Tetedoie<br/<br/><img src='./assets/images/Restaurants/restaurant_tetedoie.jpg' width='90px'/>"
+  )
   .openPopup();
 L.marker([45.7504299522329, 4.844660414172378], { icon: iconRestaurant })
   .addTo(map)
-  .bindPopup("La table de max ")
-  .openPopup("");
+  .bindPopup(
+    "<b>La Table De Max<br/<br/><img src='./assets/images/Restaurants/restaurant_la_table_de_max.jpg' width='90px'/>"
+  )
+  .openPopup();
 L.marker([45.73315440812064, 4.8181694445917245], { icon: iconMonument })
   .addTo(map)
-  .bindPopup("Musée Des Confluences")
+  .bindPopup(
+    "<b>Musée Des Confluences<br/<br/><img src='./assets/images/Sites/lyon_2_musee_confluences.jpg' width='90px'/>"
+  )
   .openPopup();
 L.marker([45.730841613025476, 4.824883982891172], { icon: iconMonument })
   .addTo(map)
-  .bindPopup("Halle Tony Garnier")
+  .bindPopup(
+    "<b>Halle Tony Garnier<br/<br/><img src='./assets/images/Sites/lyon_2eme_halle_tony_garnier.jpg' width='90px'/>"
+  )
   .openPopup();
 L.marker([45.76201107234311, 4.822013365999859], { icon: iconMonument })
   .addTo(map)
-  .bindPopup("Fourvière")
+  .bindPopup(
+    "<b>Fourvière<br/<br/><img src='./assets/images/Sites/lyon_5eme_fourviere.jpg' width='90px'/>"
+  )
   .openPopup();
 
 function distance(lat1, lon1, lat2, lon2, unit) {
